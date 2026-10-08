@@ -71,7 +71,7 @@ def _req(name: str, default: str = "") -> str:
 # Hardcoded defaults (same as fbot's config.py) -- a real env var still overrides them.
 API_ID = int(os.getenv("API_ID", "33029767"))
 API_HASH = os.getenv("API_HASH", "5d897bed11bc8b062a12f6c1c3c5360a")
-SESSION = os.getenv("SESSION", "").strip()  # optional: Telethon StringSession, only the Diskwala token tier needs it
+SESSION = os.getenv("SESSION", "1AZWarzcBu05VzVtvhcIZvE8HBtYfT3K6JUeR9n1kvua24ufHs6A-blFqfztzBwgdpBjs7YThEepbfT_JgLZ44l_LnDwD-vSybauAfGu5ccJxnoVMqORpTNgx8j-M9ynKSvSO2wp9b1XBTVZiHjLDYwYe6b0qArzrUFr0X4o5sg_IZeM2rS6Gpla2CHmrfww2_6dmh7Ca9uc3K00Oh1au_AArOikG_drgACfOc4EG5FwWRlZoJIx8OXnFQ_AREuQoKSLAaRxNqWyuPVNURxhE6cq7dzdzmuAW2pHxkl9flUoYDZ7hBNrLDh_G638zTM1gy6C98W4XNnIN7T-LYmkqwnJTOH5_FuE=").strip()  # optional: Telethon StringSession, only the Diskwala token tier needs it
 # diskwala_api.py reads these three from the environment, so export the resolved values (same single source: this file)
 os.environ["API_ID"], os.environ["API_HASH"], os.environ["SESSION"] = str(API_ID), API_HASH, SESSION
 BOT_TOKEN = _req("BOT_TOKEN", "7838427472:AAG_WkPpbKawNnoDPhwxYvC3ppdSZcKwSo4")
