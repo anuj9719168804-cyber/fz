@@ -71,7 +71,7 @@ def _req(name: str, default: str = "") -> str:
 # Hardcoded defaults (same as fbot's config.py) -- a real env var still overrides them.
 API_ID = int(_req("API_ID", "33029767"))
 API_HASH = _req("API_HASH", "5d897bed11bc8b062a12f6c1c3c5360a")
-BOT_TOKEN = _req("BOT_TOKEN", "8975252650:AAFrOva2fQFp7cJlNa_JIZ9-kNVTFB9w22w")
+BOT_TOKEN = _req("BOT_TOKEN", "7838427472:AAG_WkPpbKawNnoDPhwxYvC3ppdSZcKwSo4")
 OWNER_ID = int(os.getenv("OWNER_ID", "8729304171") or 0)
 ADMINS = {OWNER_ID, *(int(x) for x in re.findall(r"\d+", os.getenv("ADMINS", "8931907813")))} - {0}
 LOG_CHANNEL = (os.getenv("LOG_CHANNEL", "-1004401290975") or "").strip()
