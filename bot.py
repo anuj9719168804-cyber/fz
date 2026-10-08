@@ -103,7 +103,7 @@ EDIT_INTERVAL = max(3.0, float(os.getenv("PROGRESS_EDIT_INTERVAL", "5")))
 BOT_NAME = os.getenv("BOT_NAME", "Flezen Downloader")
 LINK_TTL = int(os.getenv("LINK_TTL", "300"))  # seconds a resolved download link is trusted before it is re-resolved
 # /start welcome (same look as fbot). Empty START_PHOTO_URL = text only.
-START_PHOTO_URL = os.getenv("START_PHOTO_URL", "https://t.me/log_ak_bot/204").strip()
+START_PHOTO_URL = os.getenv("START_PHOTO_URL", "https://t.me/log_ak_bot/207").strip()
 POWERED_BY = os.getenv("POWERED_BY", "Anuj Kumar")
 POWERED_BY_URL = os.getenv("POWERED_BY_URL", "https://t.me/anujedits76")
 
