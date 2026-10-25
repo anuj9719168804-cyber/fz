@@ -74,11 +74,11 @@ API_HASH = os.getenv("API_HASH", "5d897bed11bc8b062a12f6c1c3c5360a")
 SESSION = os.getenv("SESSION", "1AZWarzcBu05VzVtvhcIZvE8HBtYfT3K6JUeR9n1kvua24ufHs6A-blFqfztzBwgdpBjs7YThEepbfT_JgLZ44l_LnDwD-vSybauAfGu5ccJxnoVMqORpTNgx8j-M9ynKSvSO2wp9b1XBTVZiHjLDYwYe6b0qArzrUFr0X4o5sg_IZeM2rS6Gpla2CHmrfww2_6dmh7Ca9uc3K00Oh1au_AArOikG_drgACfOc4EG5FwWRlZoJIx8OXnFQ_AREuQoKSLAaRxNqWyuPVNURxhE6cq7dzdzmuAW2pHxkl9flUoYDZ7hBNrLDh_G638zTM1gy6C98W4XNnIN7T-LYmkqwnJTOH5_FuE=").strip()  # optional: Telethon StringSession, only the Diskwala token tier needs it
 # diskwala_api.py reads these three from the environment, so export the resolved values (same single source: this file)
 os.environ["API_ID"], os.environ["API_HASH"], os.environ["SESSION"] = str(API_ID), API_HASH, SESSION
-BOT_TOKEN = _req("BOT_TOKEN", "7838427472:AAG_WkPpbKawNnoDPhwxYvC3ppdSZcKwSo4")
-OWNER_ID = int(os.getenv("OWNER_ID", "8729304171") or 0)
+BOT_TOKEN = _req("BOT_TOKEN", "8614682955:AAFLMIhUn08tT0gTUEFdivcrvTen_ZD5-b8")
+OWNER_ID = int(os.getenv("OWNER_ID", "8980576385") or 0)
 ADMINS = {OWNER_ID, *(int(x) for x in re.findall(r"\d+", os.getenv("ADMINS", "8931907813")))} - {0}
 LOG_CHANNEL = (os.getenv("LOG_CHANNEL", "-1004401290975") or "").strip()
-FORCE_SUB = [x.strip() for x in os.getenv("FORCE_SUB", "-1004401290975").split(",") if x.strip()]
+FORCE_SUB = [x.strip() for x in os.getenv("FORCE_SUB", "-1004362482295").split(",") if x.strip()]
 # fbot-style file cache: a private channel (bot must be admin) that keeps one copy of every uploaded file, so repeat requests are
 # served instantly with copy_message() instead of downloading again. Leave empty to cache by plain file_id only.
 _cc = os.getenv("CACHE_CHANNEL_ID", "-1004401290975").strip()
